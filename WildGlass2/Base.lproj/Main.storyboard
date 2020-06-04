@@ -144,10 +144,10 @@
             </objects>
             <point key="canvasLocation" x="461" y="120"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="j7X-bB-SJ4">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Unj-0k-Hg5" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Unj-0k-Hg5" customClass="ResultViewController" customModule="WildGlass2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RNe-ti-Qs7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
