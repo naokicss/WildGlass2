@@ -84,7 +84,8 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Unj-0k-Hg5" kind="presentation" id="DHA-fG-Kdx"/>
+                                    <action selector="buttonitii:" destination="I3i-b5-f3t" eventType="touchUpInside" id="WGD-Co-i7b"/>
+                                    <segue destination="Unj-0k-Hg5" kind="presentation" identifier="button1" id="DHA-fG-Kdx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwA-Mq-q1X">
@@ -96,7 +97,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Unj-0k-Hg5" kind="presentation" id="ukW-pS-I3m"/>
+                                    <segue destination="Unj-0k-Hg5" kind="presentation" identifier="button3" id="ukW-pS-I3m"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7t-hH-X6V">
@@ -108,7 +109,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Unj-0k-Hg5" kind="presentation" id="r0w-IP-iaT"/>
+                                    <segue destination="Unj-0k-Hg5" kind="presentation" identifier="button4" id="r0w-IP-iaT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UkG-6B-fgh">
@@ -120,7 +121,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Unj-0k-Hg5" kind="presentation" id="mk3-eL-AKp"/>
+                                    <segue destination="Unj-0k-Hg5" kind="presentation" identifier="button5" id="mk3-eL-AKp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8p-2f-1CW">
@@ -132,13 +133,17 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Unj-0k-Hg5" kind="presentation" id="bon-rb-nJt"/>
+                                    <segue destination="Unj-0k-Hg5" kind="presentation" identifier="button2" id="bon-rb-nJt"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Fvk-5l-Rwi"/>
                     </view>
+                    <connections>
+                        <outlet property="ButtonIndex" destination="0bv-f3-z1l" id="HtI-49-dlT"/>
+                        <segue destination="Unj-0k-Hg5" kind="presentation" identifier="next2" id="rTi-eF-qkp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z0x-6H-emV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -172,6 +177,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="ukz-Vh-ZFH"/>
                     </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="tml-GW-U5g" id="02X-1c-0Ik"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wOG-4a-ldJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

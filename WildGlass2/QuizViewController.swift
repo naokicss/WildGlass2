@@ -10,29 +10,31 @@ import UIKit
 
 class QuizViewController: UIViewController {
     
+    @IBOutlet weak var ButtonIndex: UIButton!
+    var noteat :String = "食べられない"
+    var eat :String = "食べれる"
     
-    let total = 5 //問題数
-    var questionIndex = 0 //問題の番号
-    var answerIndex = 0 // 正解の番号
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
-    @IBAction func tap(sender: UIButton){
-        let tagNumber_ = sender.tag
-            performSegue(withIdentifier: "QuizToResult", sender: tagNumber_ )
-        }
-            
+
+    @IBAction func buttonitii(_ sender: Any) {
+     performSegue(withIdentifier: "next2", sender: nil)
+        
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "QuizToResult"{
-            if let resultVC = segue.destination as? ResultViewController{
-                resultVC.tappedBtnTag = sender as? Int
-            }
-        }
+        
+        let resultVC = segue.destination as!
+        ResultViewController
+        resultVC.eat2 = noteat
     }
-    }
+   
+
+}
+
 
   
 

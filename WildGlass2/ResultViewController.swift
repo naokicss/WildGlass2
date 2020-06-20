@@ -10,12 +10,14 @@ import UIKit
 
 class ResultViewController: UIViewController {
     
-    var tappedBtnTag: Int?
+    var eat2 = "あ"
     
     @IBOutlet var messageLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        messageLabel.text = String(eat2)
 
         // Do any additional setup after loading the view.
     }
