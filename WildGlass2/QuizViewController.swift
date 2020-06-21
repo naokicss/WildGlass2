@@ -10,7 +10,6 @@ import UIKit
 
 class QuizViewController: UIViewController {
     
-    @IBOutlet weak var ButtonIndex: UIButton!
     var noteat :String = "食べられない"
     var eat :String = "食べれる"
     
@@ -20,10 +19,13 @@ class QuizViewController: UIViewController {
         
     }
 
-    @IBAction func buttonitii(_ sender: Any) {
+    @IBAction func touchbutton(_ sender: Any) {
+        
+        
      performSegue(withIdentifier: "next2", sender: nil)
         
     }
+
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
