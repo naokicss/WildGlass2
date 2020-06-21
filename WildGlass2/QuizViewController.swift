@@ -29,7 +29,7 @@ class QuizViewController: UIViewController {
             why = eat
         }else if(sender as AnyObject).tag == 4{
             why = eat
-        }else if(sender as AnyObject).tag == 4{
+        }else if(sender as AnyObject).tag == 5{
             why = noteat
             }
         
