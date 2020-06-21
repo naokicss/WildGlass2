@@ -12,6 +12,7 @@ class QuizViewController: UIViewController {
     
     var noteat :String = "食べられない"
     var eat :String = "食べれる"
+    var why :String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +21,17 @@ class QuizViewController: UIViewController {
     }
 
     @IBAction func touchbutton(_ sender: Any) {
-        
+        if (sender as AnyObject).tag == 1{
+            why = noteat
+        }else if(sender as AnyObject).tag == 2{
+            why = eat
+        }else if(sender as AnyObject).tag == 3{
+            why = eat
+        }else if(sender as AnyObject).tag == 4{
+            why = eat
+        }else if(sender as AnyObject).tag == 4{
+            why = noteat
+            }
         
      performSegue(withIdentifier: "next2", sender: nil)
         
@@ -31,7 +42,7 @@ class QuizViewController: UIViewController {
         
         let resultVC = segue.destination as!
         ResultViewController
-        resultVC.eat2 = noteat
+        resultVC.eat2 = why
     }
    
 
